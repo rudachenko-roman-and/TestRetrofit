@@ -22,9 +22,8 @@ class RetrofitInstance {
                 .baseUrl(BASE_URL).client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-
         }
 
-        val productApi: ProductApi = retrofit.create(ProductApi::class.java)
+        val mainApi: MainApi = retrofit.create(MainApi::class.java)
     }
 }
