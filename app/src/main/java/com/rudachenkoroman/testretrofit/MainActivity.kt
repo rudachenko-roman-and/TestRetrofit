@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                     )
                     runOnUiThread {
                         binding.apply {
-                            Picasso.get().load(user.image).into(imageAvatar)
+                            Picasso.get().load(user.image).into(binding.imageAvatar)
                             firstName.text = user.firstName
                             lastName.text = user.lastName
                         }
